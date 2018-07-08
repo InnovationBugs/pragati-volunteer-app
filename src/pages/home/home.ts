@@ -46,5 +46,9 @@ export class HomePage {
       console.log(e);
     }
   }
+
+  loginA(){
+    this.navCtrl.setRoot(DashboardPage);
+  }
 }
 

@@ -20,7 +20,7 @@
   </ion-item>
   
     
-      <button ion-button block color="custom">CLICK HERE TO ACQUIRE TASK</button>
+      <button ion-button block color="custom" (click)="showSearch()">CLICK HERE TO ACQUIRE TASK</button>
     
   
     <ion-card no-padding>
@@ -60,7 +60,7 @@
   <ion-grid>
       <ion-row>
         <ion-col>
-            <button ion-button block>Provide needy Data</button>
+            <button ion-button block (click)="showNeedy()">Provide needy Data</button>
         </ion-col>
       </ion-row>
       <ion-row>

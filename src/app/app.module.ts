@@ -11,6 +11,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { VolSignupPage } from '../pages/vol-signup/vol-signup';
 import { DashboardPage } from '../pages/dashboard/dashboard';
+import { ExtraFoodInfoPage } from '../pages/extra-food-info/extra-food-info';
+import { ProvideNeedyDataPage } from '../pages/provide-needy-data/provide-needy-data';
+import { SelectStatePage } from '../pages/select-state/select-state';
+import { ResultPage } from '../pages/result/result';
+
+
+
+
 
 
 
@@ -19,7 +27,11 @@ import { DashboardPage } from '../pages/dashboard/dashboard';
     MyApp,
     HomePage,
     VolSignupPage,
-    DashboardPage
+    DashboardPage,
+    ExtraFoodInfoPage,
+    ProvideNeedyDataPage,
+    SelectStatePage,
+    ResultPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +44,11 @@ import { DashboardPage } from '../pages/dashboard/dashboard';
     MyApp,
     HomePage,
     VolSignupPage,
-    DashboardPage
+    DashboardPage,
+    ExtraFoodInfoPage,
+    ProvideNeedyDataPage,
+    SelectStatePage,
+    ResultPage
   ],
   providers: [
     StatusBar,
