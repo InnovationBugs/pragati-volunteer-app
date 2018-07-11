@@ -7,12 +7,18 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>resultPage</ion-title>
+    <ion-title>Result Page</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content padding class="masters">
+    <ion-card *ngFor="let item of donate">
+        <ion-item *ngIf="item.state == statee">
+        <ion-card-header>{{item.donate}}</ion-card-header>
+        <p>{{item.name}}<br>{{item.Address}}<br>{{item.state}}<br>{{item.phone}}</p>
+        <button ion-button (click)="findNeedy(item.id, statee)">Select</button>
+      </ion-item>
+      </ion-card>
 </ion-content>

@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ResultPage } from '../result/result';
 
 /**
- * Generated class for the SelectStatePage page.
+ * Generated class for the FinalPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,24 +10,16 @@ import { ResultPage } from '../result/result';
 
 @IonicPage()
 @Component({
-  selector: 'page-select-state',
-  templateUrl: 'select-state.html',
+  selector: 'page-final',
+  templateUrl: 'final.html',
 })
-export class SelectStatePage {
-
-  state : String;
+export class FinalPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SelectStatePage');
-  }
-
-  search(){
-    this.navCtrl.push(ResultPage, {
-      'state' : this.state
-    });
+    console.log('ionViewDidLoad FinalPage');
   }
 
 }

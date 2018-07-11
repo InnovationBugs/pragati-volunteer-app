@@ -15,6 +15,8 @@ import { ExtraFoodInfoPage } from '../pages/extra-food-info/extra-food-info';
 import { ProvideNeedyDataPage } from '../pages/provide-needy-data/provide-needy-data';
 import { SelectStatePage } from '../pages/select-state/select-state';
 import { ResultPage } from '../pages/result/result';
+import { ResultPage2Page } from '../pages/result-page2/result-page2';
+
 
 
 
@@ -31,7 +33,8 @@ import { ResultPage } from '../pages/result/result';
     ExtraFoodInfoPage,
     ProvideNeedyDataPage,
     SelectStatePage,
-    ResultPage
+    ResultPage,
+    ResultPage2Page
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { ResultPage } from '../pages/result/result';
     ExtraFoodInfoPage,
     ProvideNeedyDataPage,
     SelectStatePage,
-    ResultPage
+    ResultPage,
+    ResultPage2Page
   ],
   providers: [
     StatusBar,

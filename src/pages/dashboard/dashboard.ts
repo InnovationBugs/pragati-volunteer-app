@@ -4,7 +4,6 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { ExtraFoodInfoPage } from '../extra-food-info/extra-food-info';
 import { ProvideNeedyDataPage } from '../provide-needy-data/provide-needy-data';
 import { SelectStatePage } from '../select-state/select-state';
-import { ResultPage } from '../result/result';
 
 
 

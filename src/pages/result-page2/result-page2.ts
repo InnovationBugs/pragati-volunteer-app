@@ -1,17 +1,24 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ResultPage2Page } from '../result-page2/result-page2';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { FinalPage } from '../final/final';
+import { DashboardPage } from '../dashboard/dashboard';
 
-
+/**
+ * Generated class for the ResultPage2Page page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
 
 @IonicPage()
 @Component({
-  selector: 'page-result',
-  templateUrl: 'result.html',
+  selector: 'page-result-page2',
+  templateUrl: 'result-page2.html',
 })
-export class ResultPage {
+export class ResultPage2Page {
 
-  statee : String = this.navParams.get('state');
+  idd : any = this.navParams.get('idDonate');
+  statee : any = this.navParams.get('state');
 
   donate =[
     {
@@ -109,18 +116,24 @@ export class ResultPage {
     }
   ];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ResultPage');
+    console.log('ionViewDidLoad ResultPage2Page');
   }
+process(id : any){
+  const alert = this.alertCtrl.create({
+    title: 'Congrats!!',
+    subTitle: 'Dear Volunteer, your task has been placed, please try to complete in 25mins',
+    buttons: ['OK']
+  });
+  alert.present();
 
-  findNeedy(id : any, state : any){
-    this.navCtrl.push(ResultPage2Page,{
-      'idDonate' : id ,
-      'state' : state
+  this.navCtrl.push(DashboardPage);
+}
 
-    });
-  }
+
+
 }
